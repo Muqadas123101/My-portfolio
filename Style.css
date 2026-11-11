@@ -1,0 +1,962 @@
+/* ===== GENERAL SETTINGS ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== BODY ===== */
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #f0eafa;
+    color: #333;
+    line-height: 1.7;
+}
+
+/* ===== MAIN CONTAINER ===== */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #f0eafa;
+    border-radius: 15px;
+}
+
+/* ===== HEADER ===== */
+
+header {
+    background: linear-gradient(135deg, #594078, #76569a);
+    color: white !important;
+    padding: 30px;
+    text-align: left;
+    border-radius: 12px;
+}
+
+header h1 {
+    color: white !important;
+    font-size: 32px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+header h2 {
+    color: white !important;
+    font-size: 25px;
+    border: none;
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+header p {
+    color: white !important;
+}
+
+/* ===== NAVIGATION BAR ===== */
+
+nav {
+    background: transparent;
+    padding: 15px 0;
+    margin-top: 10px;
+    text-align: left;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px 0 0;
+    font-weight: 600;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #e0c9ff;
+}
+
+/* ===== HEADINGS ===== */
+
+h2 {
+    color: #594078;
+    font-size: 25px;
+    margin: 0 0 15px;
+    padding-left: 0;
+    border-left: none;
+}
+
+h3 {
+    color: #594078;
+    margin-bottom: 10px;
+}
+
+/* ===== PARAGRAPHS ===== */
+
+p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 12px;
+}
+
+/* ===== BUTTONS ===== */
+
+button {
+    background: #594078;
+    color: white;
+    padding: 12px 25px;
+    border: 2px solid #594078;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: white;
+    color: #594078;
+}
+
+/* ===== CARDS ===== */
+
+.card {
+    background: #ffffff;
+    padding: 25px;
+    margin: 25px 0;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
+    position: relative;
+}
+
+.card::before,
+.card::after {
+    content: none;
+    display: none;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+/* ===== CARD HEADING ===== */
+
+.card h2 {
+    border: none;
+    padding-left: 0;
+}
+
+/* ===== IMAGES ===== */
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 3px solid #d9cbea;
+    border-radius: 50%;
+    padding: 4px;
+}
+
+/* ===== LISTS ===== */
+
+ul {
+    padding-left: 25px;
+    margin-bottom: 15px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* ===== FORMS ===== */
+
+input, textarea, select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #d5c8e5;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border: 2px solid #76569a;
+}
+
+/* ===== FOOTER ===== */
+.main-footer {
+    background-color: white;
+    color: #333;
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 30px;
+}
+
+.main-footer p {
+    color: #333;
+    margin: 5px 0;
+    font-size: 14px;
+}
+/* ===== PORTFOLIO SECTIONS ===== */
+
+section {
+    position: relative;
+    background: #ffffff;
+    padding: 30px 30px 30px 55px;
+    margin: 30px 0;
+    border: none;
+    border-radius: 18px;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+/* ===== FULL PURPLE VERTICAL LINE ===== */
+
+section::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 5px;
+    background: #76569a;
+    border-radius: 18px 0 0 18px;
+}
+
+/* ===== SECTION HOVER ===== */
+
+section:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 22px rgba(0,0,0,0.12);
+}
+
+/* ===== SECTION HEADINGS ===== */
+
+section h2 {
+    color: #594078;
+    font-size: 25px;
+    border: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+/* ===== SECTION TEXT ===== */
+
+section p {
+    color: #444;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* ===== SECTION LISTS ===== */
+
+section ul {
+    padding-left: 25px;
+}
+
+section li {
+    margin-bottom: 12px;
+    color: #444;
+}
+
+/* ===== SKILLS TWO SEPARATE SECTIONS ===== */
+
+.skills-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.skills-container section {
+    margin: 15px 0;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+@media (max-width: 768px) {
+
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    header h2 {
+        font-size: 21px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 6px;
+    }
+
+    .card {
+        padding: 18px;
+    }
+
+    section {
+        padding: 20px 20px 20px 45px;
+        margin: 20px 0;
+    }
+
+    section h2 {
+        font-size: 21px;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+}/* ===== GENERAL SETTINGS ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== BODY ===== */
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #f0eafa;
+    color: #333;
+    line-height: 1.7;
+}
+
+/* ===== MAIN CONTAINER ===== */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #f0eafa;
+    border-radius: 15px;
+}
+
+/* ===== HEADER ===== */
+
+header {
+    background: linear-gradient(135deg, #594078, #76569a);
+    color: white !important;
+    padding: 30px;
+    text-align: left;
+    border-radius: 12px;
+}
+
+header h1 {
+    color: white !important;
+    font-size: 32px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+header h2 {
+    color: white !important;
+    font-size: 25px;
+    border: none;
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+header p {
+    color: white !important;
+}
+
+/* ===== NAVIGATION BAR ===== */
+
+nav {
+    background: transparent;
+    padding: 15px 0;
+    margin-top: 10px;
+    text-align: left;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px 0 0;
+    font-weight: 600;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #e0c9ff;
+}
+
+/* ===== HEADINGS ===== */
+
+h2 {
+    color: #594078;
+    font-size: 25px;
+    margin: 0 0 15px;
+    padding-left: 0;
+    border-left: none;
+}
+
+h3 {
+    color: #594078;
+    margin-bottom: 10px;
+}
+
+/* ===== PARAGRAPHS ===== */
+
+p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 12px;
+}
+
+/* ===== BUTTONS ===== */
+
+button {
+    background: #594078;
+    color: white;
+    padding: 12px 25px;
+    border: 2px solid #594078;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: white;
+    color: #594078;
+}
+
+/* ===== CARDS ===== */
+
+.card {
+    background: #ffffff;
+    padding: 25px;
+    margin: 25px 0;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
+    position: relative;
+}
+
+.card::before,
+.card::after {
+    content: none;
+    display: none;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+/* ===== CARD HEADING ===== */
+
+.card h2 {
+    border: none;
+    padding-left: 0;
+}
+
+/* ===== IMAGES ===== */
+
+.profile {
+    display: flex !important;
+    align-items: center;
+    gap: 12px;
+}
+
+.profile img {
+    width: 90px !important;
+    height: 90px !important;
+    min-width: 90px !important;
+    max-width: 90px !important;
+    object-fit: cover !important;
+    border-radius: 50% !important;
+    display: block !important;
+}
+/* ===== LISTS ===== */
+
+ul {
+    padding-left: 25px;
+    margin-bottom: 15px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* ===== FORMS ===== */
+
+input, textarea, select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #d5c8e5;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border: 2px solid #76569a;
+}
+
+/* ===== FOOTER ===== */
+
+footer {
+    background: #594078;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+/* ===== PORTFOLIO SECTIONS ===== */
+
+section {
+    position: relative;
+    background: #ffffff;
+    padding: 30px 30px 30px 55px;
+    margin: 30px 0;
+    border: none;
+    border-radius: 18px;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+/* ===== FULL PURPLE VERTICAL LINE ===== */
+
+section::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 5px;
+    background: #76569a;
+    border-radius: 18px 0 0 18px;
+}
+
+/* ===== SECTION HOVER ===== */
+
+section:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 22px rgba(0,0,0,0.12);
+}
+
+/* ===== SECTION HEADINGS ===== */
+
+section h2 {
+    color: #594078;
+    font-size: 25px;
+    border: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+/* ===== SECTION TEXT ===== */
+
+section p {
+    color: #444;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* ===== SECTION LISTS ===== */
+
+section ul {
+    padding-left: 25px;
+}
+
+section li {
+    margin-bottom: 12px;
+    color: #444;
+}
+
+/* ===== SKILLS TWO SEPARATE SECTIONS ===== */
+
+.skills-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.skills-container img {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 0;
+}
+.skills-container section {
+    margin: 15px 0;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+@media (max-width: 768px) {
+
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    header h2 {
+        font-size: 21px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 6px;
+    }
+
+    .card {
+        padding: 18px;
+    }
+
+    section {
+        padding: 20px 20px 20px 45px;
+        margin: 20px 0;
+    }
+
+    section h2 {
+        font-size: 21px;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+}/* ===== GENERAL SETTINGS ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== BODY ===== */
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #f0eafa;
+    color: #333;
+    line-height: 1.7;
+}
+
+/* ===== MAIN CONTAINER ===== */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #f0eafa;
+    border-radius: 15px;
+}
+
+/* ===== HEADER ===== */
+
+header {
+    background: linear-gradient(135deg, #594078, #76569a);
+    color: white !important;
+    padding: 30px;
+    text-align: left;
+    border-radius: 12px;
+}
+
+header h1 {
+    color: white !important;
+    font-size: 32px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+header h2 {
+    color: white !important;
+    font-size: 25px;
+    border: none;
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+header p {
+    color: white !important;
+}
+
+/* ===== NAVIGATION BAR ===== */
+
+nav {
+    background: transparent;
+    padding: 15px 0;
+    margin-top: 10px;
+    text-align: left;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px 0 0;
+    font-weight: 600;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #e0c9ff;
+}
+
+/* ===== HEADINGS ===== */
+
+h2 {
+    color: #594078;
+    font-size: 25px;
+    margin: 0 0 15px;
+    padding-left: 0;
+    border-left: none;
+}
+
+h3 {
+    color: #594078;
+    margin-bottom: 10px;
+}
+
+/* ===== PARAGRAPHS ===== */
+
+p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 12px;
+}
+
+/* ===== BUTTONS ===== */
+
+button {
+    background: #594078;
+    color: white;
+    padding: 12px 25px;
+    border: 2px solid #594078;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: white;
+    color: #594078;
+}
+
+/* ===== CARDS ===== */
+
+.card {
+    background: #ffffff;
+    padding: 25px;
+    margin: 25px 0;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
+    position: relative;
+}
+
+.card::before,
+.card::after {
+    content: none;
+    display: none;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+/* ===== CARD HEADING ===== */
+
+.card h2 {
+    border: none;
+    padding-left: 0;
+}
+
+/* ===== IMAGES ===== */
+
+img.profile {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #d8b4fe;
+}
+
+/* ===== LISTS ===== */
+
+ul {
+    padding-left: 25px;
+    margin-bottom: 15px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* ===== FORMS ===== */
+
+input, textarea, select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #d5c8e5;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border: 2px solid #76569a;
+}
+
+/* ===== FOOTER ===== */
+
+footer {
+    background: #594078;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+/* ===== PORTFOLIO SECTIONS ===== */
+
+section {
+    position: relative;
+    background: #ffffff;
+    padding: 30px 30px 30px 55px;
+    margin: 30px 0;
+    border: none;
+    border-radius: 18px;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+/* ===== FULL PURPLE VERTICAL LINE ===== */
+
+section::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 5px;
+    background: #76569a;
+    border-radius: 18px 0 0 18px;
+}
+
+/* ===== SECTION HOVER ===== */
+
+section:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 22px rgba(0,0,0,0.12);
+}
+
+/* ===== SECTION HEADINGS ===== */
+
+section h2 {
+    color: #594078;
+    font-size: 25px;
+    border: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+/* ===== SECTION TEXT ===== */
+
+section p {
+    color: #444;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* ===== SECTION LISTS ===== */
+
+section ul {
+    padding-left: 25px;
+}
+
+section li {
+    margin-bottom: 12px;
+    color: #444;
+}
+
+/* ===== SKILLS TWO SEPARATE SECTIONS ===== */
+
+.skills-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.skills-container section {
+    margin: 15px 0;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+@media (max-width: 768px) {
+
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    header h2 {
+        font-size: 21px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 6px;
+    }
+
+    .card {
+        padding: 18px;
+    }
+
+    section {
+        padding: 20px 20px 20px 45px;
+        margin: 20px 0;
+    }
+
+    section h2 {
+        font-size: 21px;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.section-with-image {
+    overflow: hidden;
+}
+
+.section-with-image .right-image {
+    float: right;
+    width: 320px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 0 !important;
+    border: 3px solid #7b4f9e !important;
+    margin: 0 0 10px 15px;
+}
